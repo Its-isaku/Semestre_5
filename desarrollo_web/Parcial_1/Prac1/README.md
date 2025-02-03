@@ -1,27 +1,28 @@
-# Práctica #1 - Portafolio Personal
+# Practice #1 - Personal Portfolio
 
-Este es mi primer proyecto de desarrollo web, un portafolio personal que hice como parte de una práctica para la universidad. Aquí muestro un poco sobre mí, mis hobbies y cómo contactarme. Aunque es una práctica sencilla, le agregué algunos efectos visuales para que se vea más interesante.
+This is my first web development project, a personal portfolio I created as part of my first assignment. Here, I share a bit about myself, my hobbies, and how to contact me. Although it's a simple practice project, I added some visual effects to make it more interesting.
 
-## ¿Qué es esto?
+## What is this?
 
-Es una página con dos secciones principales:
+It's a webpage with two main sections:
 
-1. **Inicio (`index.html`)**: Aquí puedes encontrar una breve introducción sobre mí, lo que estudio y mis hobbies (como jugar vóley, ir al gym, leer y hacer vlogs). También hay una foto de perfil y un enlace a mis proyectos en GitHub.
+1. **Home (`index.html`)**: Here, you can find a brief introduction about me, what I study, and my hobbies (such as playing volleyball, going to the gym, reading, and making vlogs). There's also a profile picture and a link to my GitHub projects.
 
-2. **Contacto (`Contact.html`)**: En esta sección están los enlaces a mis redes sociales (LinkedIn, GitHub, Instagram y YouTube).
+2. **Contact (`Contact.html`)**: This section includes links to my social media profiles (LinkedIn, GitHub, Instagram, and YouTube).
 
-## Algunas cosas que hice
+## Some things I did
 
-- **Efectos de transición**: Los enlaces de la barra de navegación cambian de color y tienen un subrayado animado cuando pasas el cursor sobre ellos. También los íconos de redes sociales se agrandan y cambian de color al interactuar con ellos.
-- **Imagen de perfil circular**: La foto de perfil tiene un borde redondeado para darle un estilo más moderno.
+- **Transition effects**: The links in the navigation bar change color and have an animated underline when you hover over them. Additionally, the social media icons enlarge and change color when you interact with them.
+- **Circular profile picture**: The profile photo has rounded edges to give it a more modern style.
 
-## Imagenes de la pagina:
-![indice:](./Screenshots/image.png)
-![contact me:](./Screenshots/image2.png)
+## Page Screenshots
 
-## ¿Cómo ver el proyecto?
+![Home](./Screenshots/image.png)  
+![Contact Me](./Screenshots/image2.png)
 
-Puedes ver el proyecto directamente en mi repositorio de GitHub:  
-[https://github.com/Its-isaku/Semestre_5/tree/main/desarrollo_web/Parcial_1/Prac1](https://github.com/Its-isaku/Semestre_5/tree/main/desarrollo_web/Parcial_1/Prac1)
+## How to view the project?
 
-Solo abre los archivos `index.html` y `Contact.html` para ver cómo quedó.
+You can view the project directly in my GitHub repository:  
+[View on GitHub](https://github.com/Its-isaku/Semestre_5/tree/main/desarrollo_web/Parcial_1/Prac1)
+
+Simply open the `index.html` and `Contact.html` files to see how it turned out.
