@@ -1,0 +1,97 @@
+/*? Global */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Noto Sans", serif;
+
+}
+
+p{
+    line-height: 2;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h2{
+    text-align: center;
+}
+
+img{
+    max-width: 100%;
+}
+
+/*? Utilities */
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*? Header */
+.header-init{
+    background-color: rgb(86, 207, 133);
+    height: 150px;
+    
+}
+
+.header-init h1{
+    font-weight: 900;
+    font-size: 45px;
+}
+
+.title{
+    text-transform: uppercase;
+    text-align: right;
+    font-weight: 700;
+}
+
+.menu-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+
+.header-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.menu a{
+    margin-right: 20px;
+}
+
+.header-secondary{
+    background-color: rgb(86, 207, 133);
+    height: 150px;
+}
+
+/*? projects */
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+
+/*? Main */
+
+
