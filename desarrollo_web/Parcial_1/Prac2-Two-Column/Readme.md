@@ -24,6 +24,6 @@ It's a responsive webpage designed to showcase and sell a unique coffee product.
 ## How to View the Project?
 
 You can view the project directly in my GitHub repository:  
-[View on GitHub](https://github.com/YourUsername/YourRepositoryName)
+[View on GitHub](https://github.com/Its-isaku/Semestre_5/tree/main/desarrollo_web/Parcial_1/Prac2-Two-Column)
 
 Simply open the `index.html` file to see how it turned out.
