@@ -24,4 +24,4 @@ It's a responsive webpage featuring a 3x3 image gallery. The layout is designed 
 ## How to View the Project?
 
 You can view the project directly in my GitHub repository:  
-[View on GitHub](https://github.com/Its-isaku/Semestre_5/tree/main/desarrollo_web/Parcial_1/Prac3-Image-Gallery)
+[View on GitHub](https://github.com/Its-isaku/Semestre_5/tree/main/desarrollo_web/Parcial_1)
