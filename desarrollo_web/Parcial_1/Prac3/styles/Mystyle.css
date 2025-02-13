@@ -1,0 +1,85 @@
+/*? Global */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Lexend", serif;
+    font-size: 16px;
+    line-height: 2;
+    background-color: #F2EFE7;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+footer{
+    background-color: #2A3335;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/*? Header */
+.header-init {
+    background-color: #2A3335;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/*? Main */
+.main-container {
+    padding: 1rem;
+    margin: 1rem;
+    column-count: 5; 
+    column-gap: 1em; 
+}
+
+.main-container img {
+    width: 100%;
+    border-radius: 1rem;
+    transition: 0.2s ease;
+    break-inside: avoid;
+    margin-bottom: 1em;
+}
+
+.main-container img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/*! ---------Media--------- */
+
+/*? Desktop */
+@media (max-width: 1200px) {
+    .main-container {
+        column-count: 3; 
+    }
+}
+
+/*? Tablet */
+@media (max-width: 768px) {
+    .main-container {
+        column-count: 2; 
+    }
+}
+
+/*? Phone */
+@media (max-width: 480px) {
+    .main-container {
+        column-count: 1;
+    }
+}
+
