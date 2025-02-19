@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/MyStyles.css">
+    <title>Practice 4</title>
+</head>
+<body>
+    <div class="form-init">  
+        <fieldset class="form-fieldset">
+            <legend>Interactive Form</legend>
+            
+            <form class="form-container">
+                <div class="form-item">
+                    <label>Name:</label>
+                    <input type="text" id="txt">
+                </div>
+                
+                <div class="form-item">
+                    <label>Email:</label>
+                    <input type="email" id="email">
+                </div>
+                
+                <div class="form-item">
+                    <label>Phone:</label>
+                    <input type="phone" id="phone">
+                </div>
+
+                <div>
+                    <small class="errorvalid" id="error-valid"></small>
+                </div>
+            </form>
+
+            <div>
+                <button class="form-Btn" id="btn" onclick="send()">Register</button>
+            </div>
+        </fieldset>
+    </div>
+
+    <script src="./scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+/*? Gobal */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin-top: 50px;
+    background-image: url(../img/Background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+/*? Form */
+.form-init{
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    width: 50%; 
+    border: none;
+    border-radius: 10px;
+    box-shadow: black 0px 0px 10px;
+    font-size: 20px;
+}
+
+.form-fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    width: 100%; 
+    border: none;
+    border-radius: 10px;
+}
+
+.form-init legend{
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.form-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+.form-item input{
+    width: 80%;
+    padding: 10px;
+    border:  none;
+    border-radius: 5px;
+}
+
+.form-Btn{
+    background-color: #23DC3D;
+    width: 120px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+}
