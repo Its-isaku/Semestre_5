@@ -24,10 +24,22 @@
                 
                 <div class="form-item">
                     <label>Phone:</label>
-                    <input type="phone" id="phone">
+                    <div class="phone-input">
+                        <select id="country-code">
+                            <option value="+1">USA (+1)</option>
+                            <option value="+52">Mexico (+52)</option>
+                            <option value="+44">UK (+44)</option>
+                            <option value="+91">India (+91)</option>
+                            <option value="+86">China (+86)</option>
+                            <option value="+81">Japan (+81)</option>
+                            <option value="+33">France (+33)</option>
+                            <option value="+49">Germany (+49)</option>
+                        </select>
+                        <input type="text" id="phone" placeholder="Enter phone number">
+                    </div>
                 </div>
 
-                <div>
+                <div class="form-item">
                     <small class="errorvalid" id="error-valid"></small>
                 </div>
             </form>

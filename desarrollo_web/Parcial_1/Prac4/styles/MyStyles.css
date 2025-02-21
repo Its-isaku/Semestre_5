@@ -82,3 +82,54 @@ body{
     cursor: pointer;
     font-size: 15px;
 }
+
+.phone-input {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-around;
+    width: 82.1%;
+}
+
+/*? Error/Success Message */
+#error-valid {
+    display: inline-block;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease, background-color 0.3s ease;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+#error-valid.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+#error-valid.success {
+    background-color: #23DC3D;
+}
+
+#error-valid.error {
+    background-color: #FF3333; 
+}
+
+#country-code {
+    width: 150px;
+    padding: 9px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#phone {
+    flex: 1;
+    padding: 9px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}

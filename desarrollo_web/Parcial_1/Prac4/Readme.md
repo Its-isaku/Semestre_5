@@ -22,6 +22,7 @@ It's a responsive webpage designed to collect user information through a form. T
 ## Page Screenshots
 
 ![Form](./screenshot/image.png)  
-![Form Validation](./screenshot/image2.png)  
+![Form succses](./screenshot/image2.png)  
+![Form errir](./screenshot/image3.png)  
 
 ---
