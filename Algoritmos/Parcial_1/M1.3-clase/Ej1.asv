@@ -1,0 +1,37 @@
+
+a = randi([0,20],100,100)
+b = randi([0,20],100,100)
+c = randi([0,20],100,100)
+
+%% Operaciones con matrices
+%% Suma A + B
+
+suma = a + b + c
+
+%% 
+
+tic
+Insercion1 = insertionSort([suma])
+Time1 = toc
+
+tic
+Insercion2 = bubbleSort([suma])
+Time2 = toc
+
+tic
+Insercion3 = mergeSort([suma])
+Time3 = toc
+
+tic
+Insercion4 = quickSort([suma])
+Time4 = toc
+
+tic
+Insercion5 = selectionSort([suma])
+Time5 = toc
+
+tic
+Insercion6 = shellSort([suma])
+Time6 = toc
+
+fprintf() 
