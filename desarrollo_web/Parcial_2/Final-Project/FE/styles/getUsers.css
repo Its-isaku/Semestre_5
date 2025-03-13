@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Lexend", sans-serif;
+    color: #eff2ea;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #100f22;
+}
+
+button{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 60px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    border: none;
+    margin-top: 30px;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 60px;
+    background: linear-gradient(45deg, #47e9b0, #4cc9ef);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+button::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 60px;
+    background: linear-gradient(45deg, #47e9b0, #4cc9ef);
+    transition: 0.3s;
+    filter: blur(15px);
+    z-index: -1;
+    opacity: 0;
+}
+
+button:hover {
+    width: 180px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
+}
+
+button:hover::before {
+    opacity: 1;
+}
+
+button:hover::after {
+    opacity: 0.5;
+}
+
+button .icon i {
+    color: #777;
+    font-size: 1.75em;
+    transition: 0.5s;
+    transition-delay: 0.25s;
+}
+
+button:hover .icon i {
+    transform: scale(0);
+    color: #fff;
+    transition-delay: 0s;
+}
+
+button .title {
+    position: absolute;
+    color: #fff;
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transform: scale(0);
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+button:hover .title {
+    transform: scale(1);
+    transition-delay: 0.2s;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+    position: relative;
+    margin-top: 75px; 
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+table th {
+    background-color: rgba(255, 255, 255, 0.1);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+table tr:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.quotes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+    position: relative;
+    line-height: 1.3;
+}
+
+blockquote footer{
+    margin-top: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #4cc9ef;
+}
+
+/* Add these media queries at the end of your file */
+
+/* For tablets and smaller screens */
+@media screen and (max-width: 768px) {
+    .container, .quotes {
+        max-width: 90%;
+        padding: 15px;
+    }
+    
+    table th, table td {
+        padding: 8px 10px;
+        font-size: 0.9em;
+    }
+    
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    blockquote {
+        font-size: 0.9em;
+    }
+}
+
+/* For mobile phones */
+@media screen and (max-width: 480px) {
+    .container, .quotes {
+        max-width: 95%;
+        padding: 10px;
+    }
+    
+    table th, table td {
+        padding: 6px 8px;
+        font-size: 0.8em;
+    }
+    
+    h1 {
+        font-size: 1.3em;
+    }
+    
+    .table-container {
+        overflow-x: scroll;
+    }
+    
+    button {
+        width: 50px;
+        height: 50px;
+    }
+    
+    button:hover {
+        width: 140px;
+    }
+    
+    button .title {
+        font-size: 0.9em;
+    }
+}

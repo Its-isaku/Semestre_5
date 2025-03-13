@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/getUsers.css?v=<?php echo time(); ?>">
+    <title>Tablero de Usuarios</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <h1>Tablero de Usuarios</h1>
+            <div class="table-container">
+                <table id="tableUser">
+                    <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Correo</th>
+                </tr>
+                <!-- Aquí aparecerán los datos de los usuarios -->
+            </table>
+        </div>
+        
+        <button type="button" class="btn">
+            <span class="icon"><i class="fa-solid fa-arrow-left"></i></span>
+            <span class="title">Regresar</span>
+        </button>
+    </div>
+    
+    <div id="quoteContainer" class="quotes">
+        <!-- Aquí aparecerán los datos de la API -->
+    </div>
+</div>
+
+    <script src="./scripts/getUsers.js"></script>
+</body>
+</html>

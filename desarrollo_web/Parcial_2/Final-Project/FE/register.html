@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/register.css?v=<?php echo time(); ?>">
+    <title>Registro de Usuario</title>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <img src="./img/usuario.png" alt="">
+            <h1>Registro de Usuario</h1>
+        </div>
+        <form id="registrationForm">
+            <div class="input-group">
+                <input type="text" id="name" name="name" placeholder="Nombre" required>
+            </div>
+
+            <div class="input-group">
+                <input type="number" id="age" name="age" placeholder="Edad" required>
+            </div>
+
+            <div class="input-group">
+                <input type="email" id="email" name="email" placeholder="Correo" required>
+            </div>
+            
+            <div class="buttons">
+                <button type="submit" class="btn">
+                    <span class="icon"><i class="fa-solid fa-arrow-right"></i></span>
+                    <span class="title">Guardar</span>
+                </button>
+                
+                <button type="button" class="btn-users">
+                    <span class="icon"><i class="fa-solid fa-table"></i></span>
+                    <span class="title">Usuarios</span>
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <script src="./scripts/register.js"></script>
+</body>
+</html>

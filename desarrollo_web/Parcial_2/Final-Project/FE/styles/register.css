@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Lexend", sans-serif;
+    color: #eff2ea;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #100f22;
+}
+
+button{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 60px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    border: none;
+    margin-top: 30px;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 60px;
+    background: linear-gradient(45deg, #47e9b0, #4cc9ef);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+button::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 60px;
+    background: linear-gradient(45deg, #47e9b0, #4cc9ef);
+    transition: 0.3s;
+    filter: blur(15px);
+    z-index: -1;
+    opacity: 0;
+}
+
+button:hover {
+    width: 180px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
+}
+
+button:hover::before {
+    opacity: 1;
+}
+
+button:hover::after {
+    opacity: 0.5;
+}
+
+button .icon i {
+    color: #777;
+    font-size: 1.75em;
+    transition: 0.5s;
+    transition-delay: 0.25s;
+}
+
+button:hover .icon i {
+    transform: scale(0);
+    color: #fff;
+    transition-delay: 0s;
+}
+
+button .title {
+    position: absolute;
+    color: #fff;
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transform: scale(0);
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+button:hover .title {
+    transform: scale(1);
+    transition-delay: 0.2s;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    padding-top: 100px; 
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+    position: relative;
+    margin-top: 75px; 
+}
+
+.container img{
+    width: 150px;
+    height: 150px;
+    position: absolute; 
+    top: -75px;
+    left: 50%;
+    transform: translateX(-50%); 
+    border-radius: 50%; 
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); 
+}
+
+.input-group input{
+    width: 300px;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    outline: none;
+    background-color: #eff2ea;
+    color: #100f22;
+}
+
+/* Add these media queries at the end of your file */
+
+/* For tablets and smaller screens */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        padding: 15px;
+        padding-top: 80px;
+        margin-top: 60px;
+    }
+    
+    .container img {
+        width: 120px;
+        height: 120px;
+        top: -60px;
+    }
+    
+    .input-group input {
+        width: 100%;
+        max-width: 260px;
+    }
+    
+    h1 {
+        font-size: 1.5em;
+    }
+}
+
+/* For mobile phones */
+@media screen and (max-width: 480px) {
+    .container {
+        max-width: 95%;
+        padding: 10px;
+        padding-top: 70px;
+        margin-top: 50px;
+    }
+    
+    .container img {
+        width: 100px;
+        height: 100px;
+        top: -50px;
+    }
+    
+    .input-group input {
+        width: 100%;
+        max-width: 230px;
+        padding: 12px;
+    }
+    
+    h1 {
+        font-size: 1.3em;
+    }
+    
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    button {
+        width: 50px;
+        height: 50px;
+        margin-top: 15px;
+    }
+    
+    button:hover {
+        width: 140px;
+    }
+    
+    button .title {
+        font-size: 0.9em;
+    }
+}
