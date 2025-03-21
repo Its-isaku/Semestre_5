@@ -1,0 +1,18 @@
+# Git ignore file
+
+# Ignore Cursor editor files
+.cursor/
+
+# Common ignored files
+node_modules/
+__pycache__/
+*.py[cod]
+*$py.class
+.DS_Store
+
+# Environment files
+.env
+.venv
+env/
+venv/
+ENV/ 

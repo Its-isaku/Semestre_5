@@ -1,0 +1,98 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Rule: Explain Code Changes in Detail with Better Comments
+
+> **Important:** The AI coding editor **must** use the Better Comments extension **in the code itself** with the following syntax:
+> - `!` use the mods that the extension provides for **important explanations or key details** (used sparingly for critical comments in the code).  
+> - `?` use the mods that the extension provides for **section titles or function headers** (used to label blocks of code or functions).  
+> - `*` use the mods that the extension provides for **specific details inside functions or code** (used to explain specific logic or behavior within the code).  
+
+## 1. Purpose of the Rule  
+> When modifying or documenting code, the AI coding editor must use the Better Comments extension to improve code readability and clarity, ensuring that the code is **well-documented** with appropriate comments.
+
+## 2. Explanation of Comment Types  
+- **`?`** use the mods that the extension provides should be used for **major section titles or function headers** to group logical sections of the code.
+- **`*`** use the mods that the extension provides should be used for **specific line-level comments** explaining the code in detail.
+- **`!`** use the mods that the extension provides should only be used in **rare occasions**, for **key comments** that are crucial for understanding complex or important decisions.
+
+## 3. Chat Explanation Format  
+In the chat, the AI should provide a detailed explanation using this format:
+- **Before**: Shows the original code.
+- **After**: Shows the modified code.
+- **Why this change?** Explanation of the issue or improvement.
+- **How does it work?** Explanation of how the change works and what was modified.
+- **When should I use this?** Explanation of when this approach or change is useful.
+- **Common Pitfalls**: Things to watch out for or mistakes to avoid.
+- **Alternative Solutions**: Other ways to solve the problem, and their trade-offs.
+- **Best Practices**: Recommended practices to follow when applying this change.
+
+---
+
+## 4. Example Response with Expanded Chat Explanation
+
+### Before:
+
+```python
+numbers = [1, 2, 3, 4, 5]
+squared = []  
+for n in numbers:  
+    squared.append(n ** 2)  //* Using a loop to populate the list
+```
+
+### After:
+
+```python
+numbers = [1, 2, 3, 4, 5]  
+squared = [n ** 2 for n in numbers]  //* Replaced with a list comprehension for efficiency
+```
+
+### Why this change?
+
+> **Why this change?**
+>
+> List comprehensions allow for the creation of a new list in a single line. They are generally more readable and perform better, especially with large data sets.
+
+### How does it work?
+
+> **How does it work?**
+>
+> The list comprehension iterates over each element in the numbers list and applies the square operation (n ** 2) to each element, returning a new list.
+
+### When should I use this?
+
+> **When should I use this?**
+>
+> Use list comprehensions when you need a fast and concise way to manipulate lists. If the operation is straightforward and can be expressed in one line, it's often the best choice.
+
+### Common Pitfalls
+
+> **Common Pitfalls**
+>
+> Avoid making the list comprehension too complex. If it requires multiple nested operations or isn't easily readable, a traditional loop might be more appropriate.
+>
+> Remember that list comprehensions can be less intuitive for beginners, so ensure the operation inside the comprehension is simple.
+
+### Alternative Solutions
+
+> **Alternative Solutions**
+>
+> You could use the map() function with a lambda to apply a transformation:
+> ```python
+> squared = list(map(lambda n: n ** 2, numbers))
+> ```
+> While this is a valid solution, it's less readable than a list comprehension and can be harder to understand at first glance.
+
+### Best Practices
+
+> **Best Practices**
+>
+> Always prefer list comprehensions over traditional for loops when you're dealing with simple transformations. It's cleaner and more Pythonic.
+>
+> If the operation is too complex, break it down into a normal for loop for better readability and maintainability.
+
+## Summary:
+- In the code, use Better Comments (//?, //*, and //!) to document and explain the code.
+- In the chat, include explanations like "Before", "After", "Why this change?", "How does it work?", "When should I use this?", along with Common Pitfalls, Alternative Solutions, and Best Practices to give more context and learning opportunities.

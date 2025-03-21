@@ -1,13 +1,14 @@
-document.addEventListener("DOMContentLoaded", ()=> {
-    const itemInput = document.getElementById("txtItem");
-    const AddItemBtn = document.getElementById("btnAdd");
-    const shoppingList = document.getElementById("shoppinglist");
+const itemInput = document.getElementById("txtItem");
+const AddItemBtn = document.getElementById("btnAdd");
+const shoppingList = document.getElementById("shoppinglist");
 
-    let items = [
-        {name: "laptop", purchased: false},
-        {name: "speaker", purchased: false},
-        {name: "keyboard", purchased: false},
-    ]; //? Array to store the items
+let items = [
+    {name: "laptop", purchased: false},
+    {name: "speaker", purchased: false},
+    {name: "keyboard", purchased: false},
+]; //? Array to store the items
+
+document.addEventListener("DOMContentLoaded", ()=> {
 
     function renderList(){
         //? Clear the list display
@@ -57,14 +58,5 @@ document.addEventListener("DOMContentLoaded", ()=> {
         items.push({name: itemText, purchased: false}); //? Create a new item object and add it to the array
         renderList();
     });
-
-    document.getElementById('animateButton').addEventListener('click', function() {
-    const box = document.querySelector('.animated-box');
-    box.style.transform = 'translateX(200px)';
-    setTimeout(() => {
-        box.style.transform = 'translateX(0)';
-    }, 2000);
-});
-
     renderList(); //? initial render   
 });
